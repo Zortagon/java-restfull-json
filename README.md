@@ -2,6 +2,7 @@
 Dalam proses pengambilan data dari server, Java dapat menggunakan library `HttpURLConnection` untuk membuat request HTTP dan menerima response dalam format JSON. Kemudian, data JSON tersebut dapat di-parse ke dalam objek Java.
 
 ### Contoh struktur project Java
+> Opsi struktur folder dan konvensi penamaan pada project.
 
     └── java
         └── <packages>                      # package utama untuk aplikasi.
@@ -12,5 +13,3 @@ Dalam proses pengambilan data dari server, Java dapat menggunakan library `HttpU
             ├── model                       # package untuk kelas-kelas model atau representasi dari data dalam aplikasi.
             │   └── Country.java            # kelas model untuk objek Country.
             └── Main.java                   # Main class pada program
-
-> Opsi struktur folder dan konvensi penamaan pada project. `api` untuk mendapatkan data JSON dari web, dan dirubah menjadi object **Country** yang disimpan di `model`
