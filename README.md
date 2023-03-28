@@ -191,3 +191,4 @@ Status:
   - Peace: false
   - Latency: 100
 ```
+> **Note**: Anda dapat melihat source code keselurhan dari repository ini diatas.
