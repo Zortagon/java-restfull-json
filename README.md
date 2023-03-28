@@ -165,3 +165,27 @@ Ubah pen-deklarasian method menjadi:
 ```java
 public static @NotNull List<Country> getCountries() throws IOException
 ```
+### 4. Menjalakan Program
+Untuk menjalakan program tambahakn code ini ke dalam `Main` class
+```java
+import me.fernanbae.model.Country;
+import me.fernanbae.service.CountryService;
+
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        for (Country country : CountryService.getCountries()) {
+            System.out.println(country.name() + " " + country.code() + " " + country.population());
+        }
+    }
+}
+```
+Jika berhasil maka akan mendapat output:
+```
+Afghanistan AF 25000
+Antarctica AQ 13500
+Barbados BB 13500
+Cameroon CM 8500
+```
