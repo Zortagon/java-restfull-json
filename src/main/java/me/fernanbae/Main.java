@@ -18,7 +18,7 @@ public class Main {
                       - Connection: %s
                       - Peace: %s
                       - Latency: %s
-                    %n""", country.getName(), country.getCode(), country.getPopulation(), country.getStatus().getConnection(), country.getStatus().isPeace(), country.getStatus().getLatency());
+                    %n""", country.name(), country.code(), country.population(), country.status().connection(), country.status().peace(), country.status().latency());
         }
     }
 }
