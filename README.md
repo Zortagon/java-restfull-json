@@ -41,3 +41,35 @@ Mengambil data dari server yang memiliki format JSON. [(Source)](https://raw.git
 ]
 ```
 > Json dengan awalan `[]` menandakan bahwa data tersebut merupakan sebuah array.
+
+# Code
+### 1. Membuat Object Country
+Dalam package utama buatlah package `model` dan buat sebuah class bernama `Country`
+```java
+public class Country {
+    
+    private final String name;
+    private final String code;
+    private int population;
+    
+    public Country(String name, String code, int population) {
+        this.name = name;
+        this.code = code;
+        this.population = population;
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public String getCode() {
+        return this.code;
+    }
+    
+    public int getPopulation() {
+        return this.population;
+    }
+    
+}
+```
+> Nama field pada kelas disesuaikan pada data di JSON agar mempermudah kedepanya. `name`, `code`, `population`
