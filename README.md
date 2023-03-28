@@ -2,7 +2,6 @@
 Dalam proses pengambilan data dari server, Java dapat menggunakan library `HttpURLConnection` untuk membuat request HTTP dan menerima response dalam format JSON. Kemudian, data JSON tersebut dapat di-parse ke dalam objek Java.
 
 ### Contoh struktur project Java
-> Opsi struktur folder dan konvensi penamaan pada project.
 
     └── java
         └── <packages>                      # package utama untuk aplikasi.
@@ -13,3 +12,32 @@ Dalam proses pengambilan data dari server, Java dapat menggunakan library `HttpU
             ├── model                       # package untuk kelas-kelas model atau representasi dari data dalam aplikasi.
             │   └── Country.java            # kelas model untuk objek Country.
             └── Main.java                   # Main class pada program
+
+> Opsi struktur folder dan konvensi penamaan pada project.
+### Sumber Data
+Mengambil data dari server yang memiliki format JSON. [(Source)](https://raw.githubusercontent.com/Zortagon/kapita-falcon-backend/main/raw/json_country_simple.json)
+```json
+[
+    {
+        "name": "Afghanistan",
+        "code": "AF",
+        "population": 25000
+    },
+    {
+        "name": "Antarctica",
+        "code": "AQ",
+        "population": 13500
+    },
+    {
+        "name": "Barbados",
+        "code": "BB",
+        "population": 13500
+    },
+    {
+        "name": "Cameroon",
+        "code": "CM",
+        "population": 8500
+    }
+]
+```
+> Json dengan awalan `[]` menandakan bahwa data tersebut merupakan sebuah array.
