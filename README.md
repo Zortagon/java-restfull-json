@@ -139,3 +139,29 @@ public class CountryAPI {
     }
 }
 ```
+### 3. Membuat Services
+Dalam package utama buatlah package `service` dan buat sebuah class bernama `CountryService`
+```java
+import me.fernanbae.api.CountryAPI;
+import me.fernanbae.model.Country;
+
+import java.io.IOException;
+import java.util.List;
+
+public class CountryService {
+    public static List<Country> getCountries() throws IOException {
+        return CountryAPI.getCountries();
+    }
+}
+```
+> **Opsional**: Untuk mendeklarasikan `getCountries()` menjadi tidak boleh kosong/null dan terhindar dari `NullPointerException`. Anda dapat memberikan annotaion
+> `@NotNull`
+
+Import module tersebut:
+```java
+import org.jetbrains.annotations.NotNull;
+```
+Ubah pen-deklarasian method menjadi:
+```java
+public static @NotNull List<Country> getCountries() throws IOException
+```
