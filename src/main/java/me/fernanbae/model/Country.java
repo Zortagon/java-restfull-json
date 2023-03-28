@@ -1,4 +1,3 @@
 package me.fernanbae.model;
 
-public class Country {
-}
+public record Country(String name, String code, int population) { }
