@@ -1,4 +1,4 @@
-package me.fernanbae.api;
+package me.fernanbae.service;
 
 public class CountryService {
 }
