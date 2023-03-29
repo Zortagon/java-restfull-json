@@ -1,15 +1,4 @@
 package me.fernanbae.model;
 
-public class User {
-
-    private int id;
-    private String username;
-
-    public int getId() {
-        return id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
+public record User(int id, String username) {
 }
